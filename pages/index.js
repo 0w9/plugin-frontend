@@ -13,7 +13,7 @@ export default function Home() {
     whiteSpace: "pre",
     fontFamily: `"Inter", sans-serif`,
     color: "#000000",
-    fontSize: 72,
+    fontSize: "6.3vw",
     letterSpacing: 0,
     lineHeight: 1.2,
     textAlign: "center",
@@ -35,17 +35,21 @@ export default function Home() {
     height: "30vh"
   })
 
+  const test_header = styled("a")
   return <>
     <Header>
       Design your next landing page. <br />
       Suported by AI.
     </Header>
 
-    <Subheader_Wrapper>
-      <Subheader
-        text="We’ve made a Plugin, that uses AI to design your next landing page. Customited by your words."
-      />
-    </Subheader_Wrapper>
+
+
+      <test_header css={{
+        fontSize: "3.5vw"
+      }}>
+        We've made a Plugin, that uses AI to design your next landing page. Customized by your words.
+      </test_header>
+
 
 
       <CTA_wrapper>
